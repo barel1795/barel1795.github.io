@@ -1,13 +1,16 @@
 body{
 	background-color: #B2C9AD;
+	font-size: 150%;
+	font-family: Lucida Sans Unicode;
+	color: #4B5945;
 }
 
 .collum{
-	background-color: #91AC8F;
 	display: inline-block;
 	text-align: center;
-	width: 30%;
+	width: 20%;
 	margin-left: 2%;
+	float: right;
 }
 
 .header-div{
@@ -16,10 +19,37 @@ body{
 	margin: auto;
 	margin-top: 2%;
 	margin-bottom: 2%;
+	text-align: center;
 }
 
 .centered{
 	margin: auto;
-	width: 80%;
+	width: 80%;	
+}
+
+.example1{
+	display: inline-block;
+	border: 3px solid #66785F ;
+	
+}
+
+footer{
+	clear: both;
+	background-color: #91AC8F;
+	height: 100px;
+	margin: 3%;
+	
+}
+
+a:hover {
+  color: #66785F;
+}
+
+a{
+	color: #4B5945;
+}
+
+.title{
+	background-color: #91AC8F;
 	
 }
