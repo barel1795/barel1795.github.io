@@ -1,0 +1,25 @@
+body{
+	background-color: #B2C9AD;
+}
+
+.collum{
+	background-color: #91AC8F;
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	margin-left: 2%;
+}
+
+.header-div{
+	background-color: #91AC8F;
+	width: 90%;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.centered{
+	margin: auto;
+	width: 80%;
+	
+}
