@@ -1,0 +1,66 @@
+body{
+	background-color: #3E5879;
+}
+
+
+.anima{
+	background-color: green;
+	height: 100px;
+	width: 100px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #D8C4B6;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes example{
+	0% { background-color: red;}
+	25% { background-color: pink;}
+	50% { background-color: white;}
+	75% { background-color: blue;}
+	100% { background-color: black;}
+}
+
+
+.cube{
+	background-color: #F5EFE7;
+	height: 100px;
+	width: 100px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #D8C4B6;
+	margin: 30px;
+	transition: all 2s;
+}
+
+.inline{
+	display: inline-block;
+}
+
+div.cube:hover{
+		width: 200px;
+}
+
+div.cube:active{
+		border-radius: 50px;
+}
+
+div.apear{
+	display: none;
+	transition: all 2s;
+}
+
+div.cube:active div.apear{
+	
+	display: block;
+	position: absolute;
+	background-color: black;
+	width: 100px;
+	height: 100px;
+	left: 50%;
+	right:50%;
+}
+
+

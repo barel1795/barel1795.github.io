@@ -1,0 +1,69 @@
+body{
+	background-color: #99B27F;
+	background-image: linear-gradient(#1A1A19, #31511E,  #5D6F2A);
+}
+
+div.sign{
+	background-image: linear-gradient(#543A14, #131010);
+	border-style: solid;
+	border-width: 5px;
+	border-color: #5e482e;
+	width: 400px;
+	height: 50px;
+	margin: auto;
+	font-size: 300%;
+	text-align: center;
+	transition: all 2s;
+	overflow: hidden;
+	margin-top: 40px;
+	color: transparent;
+}
+
+#fire{
+	height: 72px;
+	width: 72px;
+	margin: auto;
+	margin-top: 40px;
+	background-color: black;
+	background: url('sprite.png') 0 0;
+	animation: fire 1s steps(3) infinite;
+
+}
+
+@keyframes fire {
+    from { background-position: 0; }
+    to { background-position: -216px; }
+}
+
+
+
+
+
+div.sign:hover{
+	color: #bda280;
+}
+
+#one{
+	transform: rotate(10deg);
+	background-image: linear-gradient(#543A14, #131010);
+	border-color: #5e482e;
+}
+
+#two{
+	transform: rotate(-4deg);
+}
+
+#three{
+	transform: rotate(-10deg);
+}
+
+#four{
+	transform: rotate(7deg);
+}
+
+
+
+
+
+
+
