@@ -4,7 +4,7 @@ body{
 }
 
 div.sign{
-	background-image: linear-gradient(#543A14, #131010);
+	background-image: linear-gradient(#131010, #543A14);
 	border-style: solid;
 	border-width: 5px;
 	border-color: #5e482e;
@@ -19,11 +19,29 @@ div.sign{
 	color: transparent;
 }
 
+#tree{
+	background-color: #211915;
+	background-image: linear-gradient(to left, #211915 , #2b1d16);
+	width: 4%;
+	height: 500px;
+	position: absolute;
+	left: 48%	
+}
+
+#ground{
+	background-color: #211915;
+	background-image: linear-gradient(to left, #211915 , #2b1d16);
+	width: 100%;
+	top: 500px;
+	height: 500px;
+	position: absolute;	
+}
+
 #fire{
 	height: 72px;
 	width: 72px;
-	margin: auto;
-	margin-top: 40px;
+	margin-left: 30%;
+	margin-top: 100px;
 	background-color: black;
 	background: url('sprite.png') 0 0;
 	animation: fire 1s steps(3) infinite;
@@ -45,8 +63,6 @@ div.sign:hover{
 
 #one{
 	transform: rotate(10deg);
-	background-image: linear-gradient(#543A14, #131010);
-	border-color: #5e482e;
 }
 
 #two{
