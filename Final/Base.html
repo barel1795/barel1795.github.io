@@ -1,0 +1,146 @@
+<html>
+	<head>
+		<charset = "UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="FinalStyle.css">
+	</head>
+	
+	<body onload = "setTimeout(disapear, 2000);">
+	
+	<!--
+		<img src="map_2.png" class="map"></img>
+		<div id="test"> test </div>
+		<div id="start_screen")></div>
+		-->
+		
+		<div id="start_screen_start">
+			<h1 id="initial_text"> 
+				This first level of the game NEEDS to be played with a screen resolution of 1920X1080 and with bookmark bar on
+				<br><br>
+				Please make sure the character is standing on the line.	
+			</h1>
+			
+			<br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<h1 id="fitting_text"> ------ </h1>
+			
+			<button id="start" onclick="start()"> START </button>
+			
+		</div>
+		
+		<div id="start_screen"></div>
+		
+		<img src="assets/map_2.png" class="map" id="map" onclick="clicked_map()"></img>
+		
+		<div class="box" id="box_xy" onclick="clicked_box()">  </div>
+		
+		<div class="character" id="character"></div>
+		
+		
+		<div class="replace" id="tv"> 
+			<h1> It's a couch and a TV </h1>
+			<p> 
+				Nothing seems to be playing on the TV no matter what channel I switch to. <br><br>
+				The couch looks comfortable, of course  it will be, it has to be.
+			<p>
+		</div>
+		
+		<div class="replace" id="table"> 
+			<h1> It's a dining table </h1>
+			<p> 
+				<em>Four</em> chairs were ordered to be put on the table.<br><br>
+				How idiotic of me, I only have ordered the one stasis bed, why would I feel the need to
+				accomodate more people?
+				
+			<p>
+		</div>
+		
+		<div class="replace" id="door_closed"> 
+			<h1> It's a locked door </h1>
+			<p> 
+				It's locked, makes sense, I can't let any contaminated air get into here. Or worse.
+				<br><br>
+				But if I'll want to get out myself, I'll need to input a code.
+			<p>
+		</div>
+		
+		<div class="replace" id="door_open"> 
+			<h1> It's an open door </h1>
+			<p> 
+				It's open. No turning back now, time to face the world once more.
+				<br><br>
+				<button id="proceed" onclick="proceed()">proceed</button>
+			<p>
+		</div>
+		
+		<div class="replace" id="pc"> 
+			<h1> It's a computer </h1>
+			<p> 
+				I seem to have had a lot of unopened emails, 
+				damn basterds can't do anything without me. 
+				<br><br>
+				"Air Quality: accaptble"
+				<br><br>
+				Seems that I can go out now, setting the place up for long term living was useless
+				after all. Time to greet the masses.
+			<p>
+		</div>
+		
+		<div class="replace" id="trash"> 
+			<h1> It's a trash can </h1>
+			<p> 
+				It's <em>empty</em>, for now.
+			<p>
+		</div>
+		
+		<div class="replace" id="kitchen"> 
+			<h1> It's a full kitchen set </h1>
+			<p> 
+				It's stacked with a large veriety of foods and utencils to last <em> seven </em> years.
+				<br><br>
+				Dammit, I should have brought a chef with me here.
+				<br>
+				Or at least a cook book.
+			<p>
+		</div>
+		
+		<div class="replace" id="graffiti"> 
+			<h1> It's some graffiti </h1>
+			<p> 
+				Some Doctor must have wrote it before the Stasis.
+				<br><br>
+				If he is still out there he better be ready to live on the streets.
+			<p>
+		</div>
+		
+		<div class="replace" id="bed"> 
+			<h1> It's a stasis bed </h1>
+			<p> 
+				It's a stasis bed, created to let me sleep for a long time 
+				without effecting my body.
+				<br><br>
+				Made just for the purpose of me passing this god awful amount of time. 
+				<br><br>
+				It seems that the power shut down. well, it wasn't made to last very long.
+			<p>
+		</div>
+		
+		<div class="replace" id="panel"> 
+			<h1> It's a code panel </h1>
+			
+				<input type="number" id="code_text">
+				<br><br>
+				<button id="code_button" onclick="check_code()">CHECK</button>
+				<br><br><br><br>
+				<p>
+					It needs a 4 number code to open the door.
+					<br><br>
+					I don't remember the code... The numbers are on the tip of my tounge but
+					I'll have to guess their order.
+				</p>
+		</div>
+
+
+		<script src="FinalScript.js"></script>
+	</body>
+	
+</html>

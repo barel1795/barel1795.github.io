@@ -1,0 +1,143 @@
+body{
+	background-color: black;
+	overflow: hidden;
+	padding: 0;
+}
+
+h1{
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+p{
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: 20px;
+	display: inline;
+}
+
+p em{
+	color: #ab0000;
+	font-weight: bold;
+}
+
+
+.map{
+	width: 60%;
+	margin-left: 5%;
+	margin-top: 3%
+	
+}
+
+#test{
+	width: 10%;
+	height: 10%;
+	background-color: white;
+	margin: auto;
+	background-image: url('map_2.png');
+	background-repeat: no-repeat;
+}
+
+.box{
+	width: 25%;
+	height: 78.5%;
+	margin-top: 3%;
+	margin-right: 5%;
+	background-color: #9eaab5;
+	float: right;
+	padding: 20px;
+}
+
+.replace{
+	display: none;
+}
+
+#tester{
+	width: 25%;
+	height: 78.5;
+	background-color: red;
+}
+
+#start_screen{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: black;
+	/* animation */
+	animation-name: starts_screen;
+	animation-duration: 3s;
+}
+
+@keyframes starts_screen {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+
+.character {
+    width: 144px;
+    height: 144px;
+ /*  Taken from here: http://openbookproject.net/thinkcs/python/english3e/_images/duke_spritesheet.png*/ 
+    background: url('assets/character_idle_2x.png') 0 0;
+    position: absolute;
+    left: 325px; /* Initial left position */
+	top: 425px; /* Initial top position */
+    /*transform: translate(-50%, -50%);*/
+    transition: left 4s, top 4s; /* Add transition for smooth movement */
+    animation: idle_animation 2s steps(2) infinite;
+}
+
+@keyframes idle_animation {
+    from { background-position: 0; }
+    to { background-position: -288px; }
+}
+
+#code_text{
+	font-size: 30px;
+	width: 30%;
+	font-weight: bold;
+}
+
+#code_button{
+	float: down;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#proceed{
+	float: down;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#fitting{
+	width: 70px;
+    height: 160px;
+	background-color: black;
+	left: 350px; /* Initial left position */
+	top: 400px; /* Initial top position */	
+	border-style: dashed;
+	border-color: white;
+	border-width: 3px;
+}
+
+#start_screen_start{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: black;
+	text-align: center;
+}
+
+#Initial_text{
+	color: white;
+	margin-top: 10%;
+	font-size: 30px
+}
+
+#fitting_text{
+	color: white;
+	margin-right: 48%;
+}
+
+#start{
+	font-size: 40px
+}
